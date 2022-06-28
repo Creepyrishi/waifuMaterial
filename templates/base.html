@@ -1,0 +1,79 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon"
+        href="https://cdn.discordapp.com/attachments/981010549053739038/989197862363602984/image_2022-06-22_214405974.png"
+        type="x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waifu Material</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <nav>
+        <h3>Waifu</h3>
+        <div class="nav"> 
+            <span id="line_container">
+                <span class="line"></span><span class="line"></span>
+            </span>
+        </div>
+        <button class="nav_check" onclick="side()">btn</button>
+    </nav>
+    <div id="slide">
+        <h2>CATEGORIES</h2>
+        <h3 class="catohead">---SFW---</h3>
+        <ul id="sfw">
+            <li class="cato"><a href="/sfw/waifu">Waifu</a></li>
+            <li class="cato"><a href="/sfw/neko">Neko</a></li>
+            <li class="cato"><a href="/sfw/shinobu">Shinobu</a></li>
+            <li class="cato"><a href="/sfw/megumin">Megumin</a></li>
+            <li class="cato"><a href="/sfw/bully">Bully</a></li>
+            <li class="cato"><a href="/sfw/cuddle">Cuddle</a></li>
+            <li class="cato"><a href="/sfw/cry">Cry</a></li>
+            <li class="cato"><a href="/sfw/hug">Hug</a></li>
+            <li class="cato"><a href="/sfw/awoo">Awoo</a></li>
+            <li class="cato"><a href="/sfw/kiss">Kiss</a></li>
+            <li class="cato"><a href="/sfw/lick">Lick</a></li>
+            <li class="cato"><a href="/sfw/pat">Pat</a></li>
+            <li class="cato"><a href="/sfw/smug">Smug</a></li>
+            <li class="cato"><a href="/sfw/bonk">Bonk</a></li>
+            <li class="cato"><a href="/sfw/yeet">Yeet</a></li>
+            <li class="cato"><a href="/sfw/blush">Blush</a></li>
+            <li class="cato"><a href="/sfw/smile">Smile</a></li>
+            <li class="cato"><a href="/sfw/wave">Wave</a></li>
+            <li class="cato"><a href="/sfw/highfive">Highfive</a></li>
+            <li class="cato"><a href="/sfw/handhold">Handhold</a></li>
+            <li class="cato"><a href="/sfw/nom">Nom</a></li>
+            <li class="cato"><a href="/sfw/bite">Bite</a></li>
+            <li class="cato"><a href="/sfw/glomp">Glomp</a></li>
+            <li class="cato"><a href="/sfw/slap">Slap</a></li>
+            <li class="cato"><a href="/sfw/kill">Kill</a></li>
+            <li class="cato"><a href="/sfw/kick">Kick</a></li>
+            <li class="cato"><a href="/sfw/happy">Happy</a></li>
+            <li class="cato"><a href="/sfw/wink">Wink</a></li>
+            <li class="cato"><a href="/sfw/poke">Poke</a></li>
+            <li class="cato"><a href="/sfw/dance">Dance</a></li>
+            <li class="cato"><a href="/sfw/cringe">Cringe</a></li>
+
+        </ul>
+        <h3 class="catohead">---NSFW---</h3>
+        <ul id="nsfw">
+            <li class="cato"><a href="/nsfw/waifu">Waifu</a></li>
+            <li class="cato"><a href="/nsfw/neko">Neko</a></li>
+            <li class="cato"><a href="/nsfw/trap">Trap</a></li>
+            <li class="cato"><a href="/nsfw/blowjob">Blowjob</a></li>
+        </ul>
+    </div>
+</head>
+<body>
+    {% block content %}
+    {%  endblock %}
+    <footer>
+        Yuuh!
+    </footer>
+    <script src="{% static 'index.js' %}"></script>
+</body>
+</html>

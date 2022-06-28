@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+html{
+    font-size: 10px;
+}
+nav{
+    height: 4rem;
+    width: 100vw;
+    position: absolute;
+    z-index: 2;
+    background-color: blueviolet;
+}
+.nav{
+    height: auto;
+    display: flex;
+    justify-content: start;
+    transform: translateY(-3.2rem);
+
+}
+nav h3{
+    transform: translateX(50vw);
+    font-size: 3rem;
+    margin: 0 3rem;
+}
+.nav_check{
+    transform: translate(2rem,-6rem);
+    position: absolute;
+    height: 2.4rem;
+    width: 3rem;
+    opacity: 0;
+}
+#line_container{
+    align-self: center;
+    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    float: right;
+    margin: 0.4rem 1rem;
+    transition: all 100ms ease-in-out;
+}
+.line{
+    background-color: rgb(255, 255, 255);
+    margin: 0.4rem 1rem;
+    height: 0.3rem;
+    width: 2.3rem;    
+}
+#slide{
+    z-index: 2;
+    width: 27rem;
+    background-color: black;
+    /* height: 200%; */
+    position: absolute;
+    display: none;
+    transition: all 100ms ease-in-out;
+    transform: translateY(4rem);
+}
+h2{
+    text-align: center;
+    z-index: 1;
+    color: white;
+    position: relative;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 2.3rem;
+}
+.catohead{
+    text-align: center;
+    z-index: 1;
+    color: white;
+    position: relative;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 2.3rem;
+    margin: 1rem 0;
+}
+.cato{
+    list-style-type: none;
+    text-align: center;
+    height: 2.3rem;
+    width: 100%;
+}
+.cato:hover{
+    background-color: rgb(140, 131, 114);
+}
+.cato a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: white;
+    height: 2.3rem;
+    width: 100%;
+}
+/* body  */
+.card-container{
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    height: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card{
+    transform: translateY(5rem);
+    width: 25rem;
+    height: 38rem;
+    background-size: cover;
+    margin: 0.5rem;
+    border-radius: 2%;
+    transition: all 100ms ease-in-out;
+}
+.card:hover{
+    width: 26rem;
+    height: 39rem;
+    box-shadow: 1rem 1rem 3rem rgba(30, 30, 31, 0.623);
+}
+.card-nav{
+    width: 100%;
+    height: 3rem;
+}

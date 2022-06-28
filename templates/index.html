@@ -1,0 +1,13 @@
+{% extends 'base.html'%}
+
+
+{% block content %}
+<div class="card-container">
+    {% for url in urlList %}
+    <a href= '{{ url.url }}' target="_blank"><div class="card" style="background-image: url('{{ url.url }}');">
+        <div class="card-nav"></div>
+     </div></a>
+    {% endfor %}
+
+</div>
+{% endblock content %}
