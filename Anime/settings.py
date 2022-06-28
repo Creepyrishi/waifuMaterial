@@ -26,8 +26,10 @@ SECRET_KEY = 'django-insecure-6kwbib39z1eeegdv9sp7g_p@ia-%*ft!!e3a08u_)%7fbe^1_s
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = [
+    'waifumaterial.herokuapp.com',
+    'localhost'
+]
 
 # Application definition
 
