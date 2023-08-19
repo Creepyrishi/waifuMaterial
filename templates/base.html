@@ -1,5 +1,4 @@
 
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Waifu Material</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="stylesheet" href="{% static 'style.css' %}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <nav>
         <h3>Waifu</h3>
         <div class="nav"> 
@@ -72,8 +71,8 @@
     {% block content %}
     {%  endblock %}
     <footer>
-        Yuuh!
+        
     </footer>
-    <script src="{% static 'index.js' %}"></script>
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
 </body>
 </html>
